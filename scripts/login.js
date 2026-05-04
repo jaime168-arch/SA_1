@@ -19,7 +19,7 @@ if (loginForm) {
 
         
         if (user === "admin" && pass === "1234") {
-            window.location.href = "home.html";
+            window.location.href = "login.html";
         } else {
             
             msg.textContent = "Acesso Negado! Usuário ou senha inválidos.";
