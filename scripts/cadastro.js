@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const usuario = {
+         const usuario = {
             nome: nome,
             email: email,
             senha: password
