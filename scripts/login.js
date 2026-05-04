@@ -1,29 +1,18 @@
-const loginForm = document.getElementById('loginForm');
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form');
 
-if (loginForm) {
-    loginForm.addEventListener('submit', function(e) {
-        e.preventDefault(); 
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();
 
-        const user = document.getElementById('usuario').value.trim();
-        const pass = document.getElementById('senha').value.trim();
-        const msg = document.getElementById('msgErro');
-
-        msg.classList.add('d-none');
-
-      
-        if (user === "" || pass === "") {
-            msg.textContent = "Atenção: Todos os campos devem ser preenchidos!";
-            msg.classList.remove('d-none');
-            return;
-        }
-
-        
-        if (user === "admin" && pass === "1234") {
-            window.location.href = "home.html";
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        if (email === "admin@teste.com" && password === "123456") {
+            alert('Login realizado com sucesso! Redirecionando...');
         } else {
-            
-            msg.textContent = "Acesso Negado! Usuário ou senha inválidos.";
-            msg.classList.remove('d-none');
+            alert('E-mail ou senha incorretos. Tente novamente.');
         }
+        console.log("Dados capturados:", { email, password });
     });
-}
+});
+
+
