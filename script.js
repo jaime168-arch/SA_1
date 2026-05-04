@@ -23,3 +23,6 @@ const loginForm = document.getElementById('loginForm');
             
             msg.textContent = "Acesso Negado! Usuário ou senha inválidos.";
             msg.classList.remove('d-none'); }
+
+    })
+}
