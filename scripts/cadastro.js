@@ -1,17 +1,36 @@
-document.getElementById('formCadastro').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const cadastroForm = document.querySelector('form');
 
-    const dados = {
-        nome: document.getElementById('nome').value,
-        email: document.getElementById('email').value,
-        idade: document.getElementById('idade').value,
-        peso: document.getElementById('peso').value,
-        telefone: document.getElementById('telefone').value,
-        cidade: document.getElementById('cidade').value,
-        estado: document.getElementById('estado').value
-    };
+    cadastroForm.addEventListener('submit', (event) => {
+        event.preventDefault();
 
-    console.log("Dados capturados:", dados);
-    alert("Cadastro enviado com sucesso para " + dados.nome + "!");
+       
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
 
+        if (password !== confirmPassword) {
+            alert('As senhas não coincidem!');
+            return; 
+        }
+
+        if (password.length < 6) {
+            alert('A senha deve ter pelo menos 6 caracteres.');
+            return;
+        }
+
+         const usuario = {
+            nome: nome,
+            email: email,
+            senha: password
+        };
+
+    
+        localStorage.setItem('usuarioCadastrado', JSON.stringify(usuario));
+
+        alert('Cadastro realizado com sucesso! Agora faça seu login.');
+        
+        window.location.href = "index.html"; 
+    });
 });
