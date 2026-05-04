@@ -6,3 +6,8 @@ header{
     justify-self: center;
     background-color: rgb(255, 246, 193);
 }
+
+.site {
+    align-self: center;
+    color: aqua;
+}
