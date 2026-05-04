@@ -3,6 +3,6 @@ body{
 }
 
 header{
-    align-self: center;
-    background-color: blanchedalmond;
+    justify-self: center;
+    background-color: rgb(255, 246, 193);
 }
