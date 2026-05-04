@@ -27,4 +27,3 @@ const loginForm = document.getElementById('loginForm');
             msg.classList.remove('d-none'); }
 
     })
-}
