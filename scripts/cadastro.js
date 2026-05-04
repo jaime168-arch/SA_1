@@ -1,40 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cadastroForm = document.getElementById('formCadastro');
+    const telefoneInput = document.getElementById('telefone');
 
     if (!cadastroForm) return;
 
-    cadastroForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    if (telefoneInput) {
+        telefoneInput.addEventListener('input', (e) => {
         
-        const nome = document.getElementById('nome').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const telefone = document.getElementById('telefone').value.trim();
-        const password = document.getElementById('senha1').value;
-        const confirmPassword = document.getElementById('senha2').value;
+            e.target.value = e.target.value.replace(/\D/g, '');
+        });
+    }
 
-        
-        if (password !== confirmPassword) {
-            alert('As senhas não coincidem!');
-            return;
+    cadastroForm.addEventListener('submit', (event) => {
+ 
+        const s1 = document.getElementById('senha1').value;
+        const s2 = document.getElementById('senha2').value;
+
+        if (s1 !== s2) {
+            event.preventDefault(); 
+            alert('Erro: As senhas não coincidem! Tente novamente.');
+            return; 
         }
 
-        if (password.length < 6) {
+       
+        if (s1.length < 6) {
+            event.preventDefault();
             alert('A senha deve ter pelo menos 6 caracteres.');
             return;
         }
 
-     
-        const usuario = {
-            nome: nome,
-            email: email,
-            telefone: telefone,
-            senha: password
-        };
-
-        
-        localStorage.setItem('usuarioCadastrado', JSON.stringify(usuario));
-
         alert('Cadastro realizado com sucesso!');
-        window.location.href = "index.html"; 
     });
 });
