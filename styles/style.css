@@ -1,17 +1,19 @@
-body{
-    background-color: rgb(255, 173, 106);
+.body{
+    background-color: rgb(228, 193, 165);
 }
 
 header{
     justify-self: center;
-    background-color: rgb(255, 246, 193);
-}
 
+}
+.cor {
+     background-color: rgb(253, 226, 167);
+}
 .site {
     display: grid;
     justify-items: center;
-    color: rgb(22, 4, 80);
-    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 242, 224);
 }
 
 .img{
@@ -19,6 +21,32 @@ header{
 }
 
 .navbar {
-    background-color: blanchedalmond;
-    
+    background-color: rgb(255, 116, 3);
+    width: 2000px;
+    height: 100px;
+}
+
+.navbar2{
+    background-color: rgb(255, 116, 3);
+    width: 2000px;
+    height: 100px;
+}
+
+.meio {
+    justify-items: center;
+}
+
+.centro {
+    justify-items: center;
+}
+
+.botao {
+    background-color: rgb(255, 116, 3);
+     color: white;            
+     padding: 15px 40px;        
+     border-radius: 50px;       
+     text-decoration: none;    
+     font-family: Arial, sans-serif;
+     font-size: 18px;
+    display: inline-block;    
 }
