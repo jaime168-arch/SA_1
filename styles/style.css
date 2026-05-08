@@ -2,12 +2,6 @@ body{
     background-color: rgb(228, 193, 165);
 }
 
-header{
-    justify-self: center;
-        background-color: rgb(255, 116, 3);
-
-
-}
 .cor {
      background-color: rgb(253, 226, 167);
 }
@@ -22,24 +16,15 @@ header{
     align-self: center;
 }
 
-.topo{
-    height: 300px;
-}
+
 
 .navbar {
     background-color: rgb(255, 116, 3);
-    width: 1910px;
+    width: 1920px;
     height: 100px;
 }
 
 
-.meio {
-    justify-items: center;
-}
-
-.centro {
-    justify-items: center;
-}
 
 .botao {
     background-color: rgb(255, 116, 3);
@@ -52,3 +37,12 @@ header{
     display: inline-block;    
 }
 
+.navbar1 {
+    background-color: rgb(194, 84, 194);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
