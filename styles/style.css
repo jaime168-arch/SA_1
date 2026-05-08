@@ -1,4 +1,4 @@
-.body{
+body{
     background-color: rgb(228, 193, 165);
 }
 
@@ -43,11 +43,11 @@ header{
 
 .botao {
     background-color: rgb(255, 116, 3);
-     color: white;            
-     padding: 15px 40px;        
-     border-radius: 50px;       
-     text-decoration: none;    
-     font-family: Arial, sans-serif;
-     font-size: 18px;
+    color: white;            
+    padding: 15px 40px;        
+    border-radius: 50px;       
+    text-decoration: none;    
+    font-family: Arial, sans-serif;
+    font-size: 18px;
     display: inline-block;    
 }
