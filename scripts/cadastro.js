@@ -20,25 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (s1 !== s2) {
             event.preventDefault(); 
-            alert('⚠️ As senhas não coincidem!');
+            alert('As senhas não coincidem!');
             return; 
         }
 
         
         if (s1.length < 6) {
             event.preventDefault();
-            alert('⚠️ A senha deve ter pelo menos 6 caracteres.');
+            alert('A senha deve ter pelo menos 6 caracteres.');
             return;
         }
 
         
         if (telValue.length > 0 && telValue.length < 11) {
             event.preventDefault();
-            alert('⚠️ Por favor, insira um telefone válido com DDD.');
+            alert('Por favor, insira um telefone válido com DDD.');
             return;
         }
 
         
-        alert('✅ Cadastro realizado com sucesso! Redirecionando...');
+        alert('Cadastro realizado com sucesso! Redirecionando...');
     });
 });
