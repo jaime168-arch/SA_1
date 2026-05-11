@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (email === '' || password === '') {
             event.preventDefault();
-            alert('⚠️ Por favor, preencha todos os campos.');
+            alert('Por favor, preencha todos os campos.');
             return;
         }
 
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             event.preventDefault();
-            alert('⚠️ Por favor, insira um e-mail válido.');
+            alert(' Por favor, insira um e-mail válido.');
             return;
         }
 
         console.log('Tentativa de login com:', email);
 
         
-        alert('✅ Login realizado com sucesso! Bem-vindo de volta.');
+        alert('Login realizado com sucesso! Bem-vindo de volta.');
         
         
     });
