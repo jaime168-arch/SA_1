@@ -1,51 +1,59 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sidebar = document.querySelector('.sidebar');
-    const mainContent = document.querySelector('.main-content');
     
-   
-    window.toggleSidebar = () => {
-        sidebar.classList.toggle('active');
+    const usuarioLogado = {
+        nome: "Felipe Silva",
+        nivel: "Premium",
+        tarefas: 15,
+        ultimoAcesso: "Hoje, 09:45",
+        foto: "https://pravatar.cc"
     };
 
+    const atualizarInterface = () => {
+        const saudacao = document.querySelector('h2.fw-bold');
+        const avatar = document.querySelector('.dropdown img');
+        
+        if(saudacao) saudacao.textContent = `Bem-vindo, ${usuarioLogado.nome.split(' ')[0]}!`;
+        if(avatar) avatar.src = usuarioLogado.foto;
+    };
+
+    const mainContent = document.querySelector('.main-content');
+    const sidebar = document.querySelector('.sidebar');
     
-    const btnSair = document.querySelector('.text-danger'); 
-    if (btnSair) {
+    const criarBotaoMenu = () => {
+        const btn = document.createElement('button');
+        btn.innerHTML = '<i class="bi bi-list"></i>';
+        btn.className = 'btn btn-dark d-md-none position-fixed top-0 start-0 m-3';
+        btn.style.zIndex = '1050';
+        
+        btn.onclick = () => {
+            sidebar.classList.toggle('active');
+        };
+        
+        document.body.appendChild(btn);
+    };
+
+    const linksNav = document.querySelectorAll('.sidebar a');
+    linksNav.forEach(link => {
+        link.addEventListener('click', function(e) {
+            linksNav.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            
+            if(window.innerWidth <= 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    });
+
+    const btnSair = document.querySelector('.text-danger');
+    if(btnSair) {
         btnSair.addEventListener('click', (e) => {
-            const confirmar = confirm("Deseja realmente sair da sua conta?");
-            if (!confirmar) {
-                e.preventDefault(); 
+            e.preventDefault();
+            if(confirm("Deseja realmente sair da conta?")) {
+                window.location.href = "login.html";
             }
         });
     }
 
-    
-    const carregarDadosIniciais = () => {
-        console.log("Sincronizando dados do usuário...");
-    };
-
-    carregarDadosIniciais();
-
-    
-    const botoesDetalhes = document.querySelectorAll('.btn-outline-primary');
-    botoesDetalhes.forEach(botao => {
-        botao.addEventListener('click', (e) => {
-            const linha = e.target.closest('tr'); 
-            const acao = linha.cells[0].innerText;
-            alert(`Exibindo detalhes sobre: ${acao}`);
-        });
-    });
-
-    
-    const saudacaoElemento = document.querySelector('h2.fw-bold');
-    if (saudacaoElemento) {
-        const hora = new Date().getHours();
-        let saudacaoText = "";
-
-        if (hora >= 5 && hora < 12) saudacaoText = "Bom dia";
-        else if (hora >= 12 && hora < 18) saudacaoText = "Boa tarde";
-        else saudacaoText = "Boa noite";
-
-        
-        saudacaoElemento.innerText = `${saudacaoText}, Usuário!`;
-    }
+    atualizarInterface();
+    criarBotaoMenu();
 });
