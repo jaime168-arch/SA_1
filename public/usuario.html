@@ -1,49 +1,101 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do Usuário | + Já.Ismaga</title>
+    <title>Área do Usuário | Já Ismaga</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
     <style>
         :root {
-            --sidebar-width: 250px;
+            --laranja-ismaga: #FF7F00;
+            --azul-ismaga: #002B5B;
+            --sidebar-width: 260px;
         }
+
         body {
-            background-color: #f8f9fa;
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         .sidebar {
             width: var(--sidebar-width);
             height: 100vh;
             position: fixed;
-            background: #212529;
+            background: var(--azul-ismaga);
             color: white;
             transition: all 0.3s;
+            z-index: 1000;
         }
+
+        .sidebar .brand-area {
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
         .sidebar a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.7);
             text-decoration: none;
-            padding: 15px 20px;
-            display: block;
+            padding: 12px 25px;
+            display: flex;
+            align-items: center;
+            transition: 0.2s;
+            border-left: 4px solid transparent;
         }
+
+        .sidebar a i { font-size: 1.2rem; }
+
         .sidebar a:hover, .sidebar a.active {
-            background: #343a40;
+            background: rgba(255,255,255,0.1);
             color: white;
-            border-left: 4px solid #0d6efd;
+            border-left: 4px solid var(--laranja-ismaga);
         }
+
+      
         .main-content {
             margin-left: var(--sidebar-width);
-            padding: 30px;
+            padding: 40px;
         }
+
+        
         .card-stats {
             border: none;
-            border-radius: 15px;
-            transition: transform 0.2s;
+            border-radius: 12px;
+            border-bottom: 4px solid var(--laranja-ismaga); 
+            transition: transform 0.3s ease;
         }
+
         .card-stats:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
         }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 127, 0, 0.1);
+            color: var(--laranja-ismaga);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+       
+        .btn-ismaga-outline {
+            color: var(--laranja-ismaga);
+            border-color: var(--laranja-ismaga);
+        }
+
+        .btn-ismaga-outline:hover {
+            background-color: var(--laranja-ismaga);
+            color: white;
+        }
+
+        .badge-sucesso { background-color: #d4edda; color: #155724; }
+        .badge-pendente { background-color: #fff3cd; color: #856404; }
+
         @media (max-width: 768px) {
             .sidebar { margin-left: calc(-1 * var(--sidebar-width)); }
             .main-content { margin-left: 0; }
@@ -54,86 +106,96 @@
 <body>
 
     <div class="sidebar shadow">
-        <div class="p-4 text-center">
-            <h4><strong>+ Já</strong>.Ismaga</h4>
-            <hr>
+        <div class="brand-area">
+            <h4 class="mb-0 fw-bold"><span style="color: var(--laranja-ismaga);">+</span> JÁ ISMAGA</h4>
+            <small class="opacity-50 text-uppercase" style="letter-spacing: 2px;">Passageiro</small>
         </div>
-        <nav>
-            <a href="#" class="active"><i class="bi bi-house-door me-2"></i> Início</a>
-            <a href="#"><i class="bi bi-person me-2"></i> Perfil</a>
-            <a href="#"><i class="bi bi-gear me-2"></i> Configurações</a>
-            <a href="#"><i class="bi bi-envelope me-2"></i> Mensagens</a>
-            <hr>
-            <a href="login.html" class="text-danger"><i class="bi bi-box-arrow-left me-2"></i> Sair</a>
+        
+        <nav class="mt-4">
+            <a href="#" class="active"><i class="bi bi-speedometer2 me-3"></i> Painel Geral</a>
+            <a href="#"><i class="bi bi-person-circle me-3"></i> Meu Perfil</a>
+            <a href="#"><i class="bi bi-ticket-perforated me-3"></i> Meus Bilhetes</a>
+            <a href="#"><i class="bi bi-geo-alt me-3"></i> Rotas Favoritas</a>
+            <hr class="mx-3 opacity-25">
+            <a href="#"><i class="bi bi-gear me-3"></i> Configurações</a>
+            <a href="login.html" class="text-danger mt-5"><i class="bi bi-box-arrow-left me-3"></i> Sair do Sistema</a>
         </nav>
     </div>
 
     <main class="main-content">
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <header class="d-flex justify-content-between align-items-center mb-5">
             <div>
-                <h2 class="fw-bold">Bem-vindo, Usuário!</h2>
-                <p class="text-muted">Aqui está o resumo das suas atividades.</p>
+                <h2 class="fw-bold" style="color: var(--azul-ismaga);">Olá, Passageiro!</h2>
+                <p class="text-muted">Bem-vindo à sua central de controle ferroviário.</p>
             </div>
-            <div class="dropdown">
-                <img src="https://via.placeholder.com/45" class="rounded-circle shadow-sm border" alt="Avatar">
+            <div class="d-flex align-items-center">
+                <div class="text-end me-3 d-none d-md-block">
+                    <p class="mb-0 fw-bold">João Silva</p>
+                    <small class="text-muted">ID: #88291</small>
+                </div>
+                <img src="https://ui-avatars.com/api/?name=Joao+Silva&background=002B5B&color=fff" class="rounded-circle shadow-sm" width="50" alt="Avatar">
+            </div>
+        </header>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-md-4">
+                <div class="card card-stats bg-white shadow-sm p-4">
+                    <div class="icon-box"><i class="bi bi-star-fill fs-4"></i></div>
+                    <h6 class="text-muted mb-1">Nível de Conta</h6>
+                    <h4 class="fw-bold" style="color: var(--azul-ismaga);">Premium</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card card-stats bg-white shadow-sm p-4">
+                    <div class="icon-box"><i class="bi bi-clock-history fs-4"></i></div>
+                    <h6 class="text-muted mb-1">Último Acesso</h6>
+                    <h4 class="fw-bold" style="color: var(--azul-ismaga);">Hoje, 09:45</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card card-stats bg-white shadow-sm p-4">
+                    <div class="icon-box"><i class="bi bi-lightning-charge fs-4"></i></div>
+                    <h6 class="text-muted mb-1">Pontos de Fidelidade</h6>
+                    <h4 class="fw-bold" style="color: var(--azul-ismaga);">2.450 pts</h4>
+                </div>
             </div>
         </div>
 
-        <div class="row g-4 mb-4">
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card card-stats bg-white shadow-sm p-3 text-center">
-                    <i class="bi bi-star-fill text-warning fs-1 mb-2"></i>
-                    <h6 class="text-muted">Nível de Conta</h6>
-                    <h4 class="fw-bold">Premium</h4>
-                </div>
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="card-header bg-white py-3 border-0">
+                <h5 class="mb-0 fw-bold" style="color: var(--azul-ismaga);">Histórico de Atividades</h5>
             </div>
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card card-stats bg-white shadow-sm p-3 text-center">
-                    <i class="bi bi-clock-history text-primary fs-1 mb-2"></i>
-                    <h6 class="text-muted">Último Acesso</h6>
-                    <h4 class="fw-bold">Hoje, 08:30</h4>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card card-stats bg-white shadow-sm p-3 text-center">
-                    <i class="bi bi-check-circle text-success fs-1 mb-2"></i>
-                    <h6 class="text-muted">Tarefas Concluídas</h6>
-                    <h4 class="fw-bold">12</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="card shadow-sm border-0">
-            <div class="card-header bg-white py-3">
-                <h5 class="mb-0 fw-bold">Atividades Recentes</h5>
-            </div>
-            <div class="card-body p-0">
-                <div class="table-responsive">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th class="ps-4">Ação</th>
-                                <th>Data</th>
-                                <th>Status</th>
-                                <th class="text-end pe-4">Detalhes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="ps-4 text-dark fw-semibold">Login realizado</td>
-                                <td class="text-muted">11/05/2026</td>
-                                <td><span class="badge bg-success-subtle text-success">Sucesso</span></td>
-                                <td class="text-end pe-4"><button class="btn btn-sm btn-outline-primary">Ver</button></td>
-                            </tr>
-                            <tr>
-                                <td class="ps-4 text-dark fw-semibold">Alteração de Senha</td>
-                                <td class="text-muted">09/05/2026</td>
-                                <td><span class="badge bg-warning-subtle text-warning">Pendente</span></td>
-                                <td class="text-end pe-4"><button class="btn btn-sm btn-outline-primary">Ver</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="ps-4 border-0">ATIVIDADE</th>
+                            <th class="border-0">DATA</th>
+                            <th class="border-0">STATUS</th>
+                            <th class="text-end pe-4 border-0">AÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ps-4 fw-semibold">Recarga de Cartão Digital</td>
+                            <td class="text-muted">13/05/2026</td>
+                            <td><span class="badge badge-sucesso px-3 py-2">Concluído</span></td>
+                            <td class="text-end pe-4"><button class="btn btn-sm btn-ismaga-outline px-3">Detalhes</button></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-4 fw-semibold">Acesso Estação Central</td>
+                            <td class="text-muted">12/05/2026</td>
+                            <td><span class="badge badge-sucesso px-3 py-2">Concluído</span></td>
+                            <td class="text-end pe-4"><button class="btn btn-sm btn-ismaga-outline px-3">Detalhes</button></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-4 fw-semibold">Suporte via Chat</td>
+                            <td class="text-muted">10/05/2026</td>
+                            <td><span class="badge badge-pendente px-3 py-2">Em Análise</span></td>
+                            <td class="text-end pe-4"><button class="btn btn-sm btn-ismaga-outline px-3">Detalhes</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>

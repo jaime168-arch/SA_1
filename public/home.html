@@ -2,31 +2,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Já Ismaga- Home</title>
+    <title>Já Ismaga - Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    
+    <style>
+        :root {
+            --laranja-ismaga: #FF7F00;
+            --azul-ismaga: #002B5B;
+            --cinza-fundo: #f8f9fa;
+        }
+
+        body {
+            background-color: var(--cinza-fundo);
+        }
+
+        
+        #sidebar {
+            background-color: var(--azul-ismaga) !important;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+            border-radius: 5px;
+            margin: 5px 15px;
+            color: rgba(255,255,255,0.8) !important;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--laranja-ismaga) !important;
+            color: white !important;
+        }
+
+       
+        .card-ismaga {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .card-ismaga:hover {
+            transform: translateY(-5px);
+        }
+
+        .bg-laranja { background-color: var(--laranja-ismaga); color: white; }
+        .bg-azul { background-color: var(--azul-ismaga); color: white; }
+        
+        .btn-ismaga-primary {
+            background-color: var(--laranja-ismaga);
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        .btn-ismaga-primary:hover {
+            background-color: #e67200;
+            color: white;
+        }
+
+        .btn-ismaga-outline {
+            border: 2px solid var(--azul-ismaga);
+            color: var(--azul-ismaga);
+            font-weight: bold;
+        }
+
+        .btn-ismaga-outline:hover {
+            background-color: var(--azul-ismaga);
+            color: white;
+        }
+
+        .border-ismaga {
+            border-left: 5px solid var(--laranja-ismaga) !important;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse min-vh-100">
-            <div class="position-sticky pt-3 text-white">
-                <h3 class="text-center py-3">Ferrorama</h3>
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse min-vh-100 p-0">
+            <div class="position-sticky pt-3">
+                <div class="text-center py-4">
+                    <h3 class="fw-bold text-white">Já Ismaga</h3>
+                    <small class="text-white-50">Painel de Controle</small>
+                </div>
+                
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">
+                        <a class="nav-link active" href="#">
                             <i class="fa-solid fa-house me-2"></i> Dashboard
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="usuarios-lista.html">
+                        <a class="nav-link" href="usuarios-lista.html">
                             <i class="fa-solid fa-users me-2"></i> Usuários
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link" href="#">
                             <i class="fa-solid fa-train me-2"></i> Trens
                         </a>
                     </li>
@@ -40,51 +114,67 @@
         </nav>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Bem-vindo, Maquinista!</h1>
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
+                <h1 class="h2 fw-bold" style="color: var(--azul-ismaga);">Bem-vindo, Maquinista!</h1>
+                <span class="badge bg-dark p-2"><i class="fa-solid fa-circle text-success me-1"></i> Sistema Online</span>
             </div>
 
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card bg-primary text-white mb-4 shadow">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-ismaga bg-azul shadow-sm border-ismaga">
                         <div class="card-body d-flex align-items-center">
-                            <i class="fa-solid fa-user-check fa-2x me-3"></i>
+                            <div class="rounded-circle bg-white p-3 me-3 text-primary">
+                                <i class="fa-solid fa-user-check fa-2x" style="color: var(--azul-ismaga);"></i>
+                            </div>
                             <div>
-                                <h5 class="card-title">Usuários Ativos</h5>
-                                <p class="card-text fs-4">128</p>
+                                <h6 class="card-title mb-0 opacity-75">Usuários Ativos</h6>
+                                <p class="card-text fs-3 fw-bold">128</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-success text-white mb-4 shadow">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-ismaga bg-laranja shadow-sm border-0">
                         <div class="card-body d-flex align-items-center">
-                            <i class="fa-solid fa-route fa-2x me-3"></i>
+                            <div class="rounded-circle bg-white p-3 me-3">
+                                <i class="fa-solid fa-route fa-2x" style="color: var(--laranja-ismaga);"></i>
+                            </div>
                             <div>
-                                <h5 class="card-title">Viagens Concluídas</h5>
-                                <p class="card-text fs-4">1.240</p>
+                                <h6 class="card-title mb-0 opacity-75">Viagens Concluídas</h6>
+                                <p class="card-text fs-3 fw-bold">1.240</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-warning text-dark mb-4 shadow">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-ismaga bg-white shadow-sm border-ismaga">
                         <div class="card-body d-flex align-items-center">
-                            <i class="fa-solid fa-triangle-exclamation fa-2x me-3"></i>
+                            <div class="rounded-circle bg-light p-3 me-3">
+                                <i class="fa-solid fa-triangle-exclamation fa-2x text-warning"></i>
+                            </div>
                             <div>
-                                <h5 class="card-title">Alertas Técnicos</h5>
-                                <p class="card-text fs-4">3</p>
+                                <h6 class="card-title mb-0 text-muted">Alertas Técnicos</h6>
+                                <p class="card-text fs-3 fw-bold text-dark">3</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-4 p-5 bg-light border rounded-3 shadow-sm">
-                <h2>Gerenciamento do Sistema</h2>
-                <p>Utilize os botões abaixo para realizar as operações mais comuns na malha ferroviária digital.</p>
-                <button class="btn btn-dark btn-lg">Adicionar Novo Trem</button>
-                <button class="btn btn-outline-dark btn-lg">Relatórios</button>
+            <div class="mt-2 p-5 bg-white border-0 rounded-4 shadow-sm">
+                <h2 class="fw-bold" style="color: var(--azul-ismaga);">Gerenciamento do Sistema</h2>
+                <p class="text-muted fs-5">Utilize os controles abaixo para operar a malha ferroviária digital da Já Ismaga.</p>
+                <hr class="my-4">
+                <div class="d-flex gap-3 flex-wrap">
+                    <button class="btn btn-ismaga-primary btn-lg px-4">
+                        <i class="fa-solid fa-plus me-2"></i> Adicionar Novo Trem
+                    </button>
+                    <button class="btn btn-ismaga-outline btn-lg px-4">
+                        <i class="fa-solid fa-file-lines me-2"></i> Gerar Relatórios
+                    </button>
+                </div>
             </div>
         </main>
     </div>
