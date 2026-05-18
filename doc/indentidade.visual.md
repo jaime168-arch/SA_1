@@ -1,5 +1,7 @@
 # Indentidade Visual - Já ismaga
 
+<img src="assest/imagem_1.webp.png" width="300">
+
 A indentidade visual da **Já ismaga** busca equilibrar a nostalgia do ferrorama com a modernidade da industria 4.0.
 
 ## 1. Conceito e Logo
