@@ -1,5 +1,21 @@
 # Pesquisa XAMPP - Já Ismaga
 
-O projeto XAMPP da empresa **Já Ismaga** é um servidor local completo que simula o ambiente de produção necessário para rodar o ecossistema IoT da Já Ismaga antes de enviá-lo para a nuvem. Ele integra quatro componentes essenciais para a automação da malha ferroviária: o Apache (servidor web que processa as requisições), o MySQL/MariaDB (banco de dados que armazena os registros de telemetria e operadores), o PHP (linguagem back-end que executa a lógica do CRUD e comandos de desvio) e o phpMyAdmin (interface gráfica que facilita o gerenciamento desse banco de dados).
-
-Para configurá-lo, basta instalar o pacote, iniciar os serviços do Apache e MySQL pelo Painel de Controle e mover todos os arquivos do projeto para a pasta htdocs. O acesso passa a ser feito localmente via localhost no navegador. Esse ambiente é fundamental para a Já Ismaga porque elimina custos com hospedagem na fase de testes e permite validar com segurança a comunicação dos scripts com os sensores de velocidade, presença e corrente, corrigindo falhas de integração sem afetar o usuário final.
+   O XAMPP é um pacote de software livre que funciona como um servidor local 
+   completo, simulando o ambiente de produção para rodar a aplicação web da 
+   Já Ismaga antes do deploy na nuvem.
+   
+   COMPONENTES E FINALIDADES:
+   - Apache: Servidor web que processa as requisições HTTP do navegador.
+   - MySQL/MariaDB: Banco de dados relacional (SGBD) para armazenar telemetria 
+     de sensores e logins de operadores.
+   - PHP: Linguagem back-end que executa a lógica do CRUD e as regras de automação.
+   - phpMyAdmin: Interface gráfica web para gerenciamento simplificado do banco.
+   
+   INSTALAÇÃO E CONFIGURAÇÃO LOCAL:
+   1. Ativar os serviços "Apache" e "MySQL" através do XAMPP Control Panel.
+   2. Mover a pasta do projeto obrigatoriamente para dentro de 'xampp/htdocs/'.
+   3. Executar e testar as interfaces no navegador via 'http://localhost/'.
+   
+   IMPORTÂNCIA DO AMBIENTE:
+   Permite testes de integração em tempo real de hardware/software com custo 
+   zero de hospedagem, validando scripts e dados de sensores com segurança.
