@@ -1,6 +1,6 @@
 # Pesquisa scrum - Já Ismaga
 
-<img src="../assest/scrum.png" width="300">
+<img src="../assets/scrum.png" width="300">
 
 O que é SCRUM?
 R: Scrum é um framework ágil usado para gerenciar e executar projetos complexos. Ele divide grandes objetivos em ciclos curtos e contínuos chamados Sprints geralmente de 2 a 4 semanas, permitindo que a equipe se adapte rapidamente a mudanças. 

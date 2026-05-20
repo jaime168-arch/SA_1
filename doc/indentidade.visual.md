@@ -10,6 +10,7 @@ O conceito une trilhos lineares a caminhos de circuitos impressos (PCB), simboli
 ## 2. Paleta de Cores
 * **Azul Tecnológico (#1A237E):** Representa a confiança, a segurança e tecnológia Cloud que apresentamos.
 * **Laranja Alerta (#FF6D00):** Remete à energia de automações e de botões de ação.
+* **
 
 ## 3. Interface do usuário (UI)
 * **Dark Mode:** Utilizando no dashboard para destacar dados de telemetria.
