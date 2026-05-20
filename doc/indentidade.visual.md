@@ -15,3 +15,5 @@ O conceito une trilhos lineares a caminhos de circuitos impressos (PCB), simboli
 ## 3. Interface do usuário (UI)
 * **Dark Mode:** Utilizando no dashboard para destacar dados de telemetria.
 * **Tipografia:** Uso de fornte modernas sem serifa para garantir legibilidade técnica.
+
+## 4. 
