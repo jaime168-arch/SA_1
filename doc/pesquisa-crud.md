@@ -1,6 +1,6 @@
 # Pesquisa crud - Já ismaga
 
-<img src="../assest/crud.png" width="300">
+<img src="../assets/crud.png" width="300">
 
 O projeto de ferrorama IoT da **Já Ismaga** une a nostalgia do clássico brinquedo à vanguarda da Indústria 4.0, transformando trilhos tradicionais em um ecossistema conectado e inteligente. Através da integração de microcontroladores e sensores avançados, o sistema permite o controle total de velocidade, direção e iluminação via dispositivos móveis, utilizando telemetria em tempo real para monitorar a posição exata da locomotiva e o estado dos componentes.
 

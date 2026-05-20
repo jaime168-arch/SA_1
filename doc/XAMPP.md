@@ -1,6 +1,6 @@
 # Pesquisa XAMPP - Já Ismaga
 
-<img src="../assest/xampp.png" width="300">
+<img src="../assets/xampp.png" width="300">
 
    O XAMPP é um pacote de software livre que funciona como um servidor local 
    completo, simulando o ambiente de produção para rodar a aplicação web da 
