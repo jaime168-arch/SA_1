@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const confirmar = confirm(`Tem certeza que deseja remover o sensor:\n[${idSensor}] - ${nomeSensor}?`);
 
             if (confirmar) {
-           
+             
                 linha.style.transition = 'all 0.4s ease';
                 linha.style.opacity = '0';
                 linha.style.transform = 'scale(0.95)';
