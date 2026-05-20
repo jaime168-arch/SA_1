@@ -18,7 +18,17 @@
    1. Ativar os serviços "Apache" e "MySQL" através do XAMPP Control Panel.
    2. Mover a pasta do projeto obrigatoriamente para dentro de 'xampp/htdocs/'.
    3. Executar e testar as interfaces no navegador via 'http://localhost/'.
-   
+
+   Vantagens:
+   Fácil Instalação: Agrupa os serviços mais importantes em um clique.
+   Sem Custo: É um software totalmente livre e gratuito.
+   Praticidade: Permite ligar e desligar os serviços facilmente através de um Painel de Controle unificado. 
+
+   Desvantagens:
+   Falta de isolamento real: Diferente de tecnologias como Docker, o XAMPP altera diretórios diretamente na máquina e pode causar conflitos de portas.
+   Segurança: O ambiente não é seguro para ambientes de produção (sites reais na internet) por vir configurado de fábrica para facilitar os testes, com senhas padrão fáceis ou vazias.
+   Hábito de iniciante: Alguns desenvolvedores preferem instalar os serviços manualmente ou usar contêineres para entender exatamente como a infraestrutura web funciona nos bastidores. 
+
    IMPORTÂNCIA DO AMBIENTE:
    Permite testes de integração em tempo real de hardware/software com custo 
    zero de hospedagem, validando scripts e dados de sensores com segurança.
