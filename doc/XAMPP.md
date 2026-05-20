@@ -19,6 +19,8 @@
    2. Mover a pasta do projeto obrigatoriamente para dentro de 'xampp/htdocs/'.
    3. Executar e testar as interfaces no navegador via 'http://localhost/'.
 
+   Ao instalá-lo, cada usuário fica à disposição de um servidor Apache para hospedar páginas web, MySQL para gerenciamento de bancos de dados e suporte a PHP e Perl para desenvolvimento de aplicações dinâmicas.
+
    Vantagens:
    Fácil Instalação: Agrupa os serviços mais importantes em um clique.
    Sem Custo: É um software totalmente livre e gratuito.
