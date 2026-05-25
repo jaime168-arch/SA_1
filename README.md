@@ -2,7 +2,7 @@
 
 **Alunos:** Jaime Rodrigues, Maria Eduarda, Isabela Albano e Gabriela Dias 
 
-<img src="assest/imagem_1.webp.png" width="300">
+<img src="assets/imagem_1.webp.png" width="300">
 
 ## Descrição
 
