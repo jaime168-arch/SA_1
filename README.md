@@ -9,7 +9,6 @@
   <img width="300" height="300" alt="Logo Já Ismaga" src="assets/imagem_1.webp.png" />
 </p>
 
----
 
 ## Índice
 - [Descrição do Projeto](#descrição-do-projeto)
@@ -21,7 +20,6 @@
 - [Como Executar o Projeto](#como-executar-o-projeto)
 - [Desenvolvedores](#desenvolvedores)
 
----
 
 ## Descrição do Projeto
 
@@ -106,22 +104,3 @@ O ecossistema utiliza as seguintes tecnologias:
     <img src="https://skillicons.dev/icons?i=html,css,js,php,mysql,bootstrap,git,github" />
   </a>
 </p>
-
-
----
-
-##  Estrutura do Projeto
-
-A estrutura de diretórios do repositório está organizada da seguinte forma:
-
-```text
-/
-├── assets/                  # Imagens, logos e recursos visuais
-├── database/                # Scripts SQL e modelo de dados
-├── doc/                     # Documentações e pesquisas do projeto
-├── public/                  # Arquivos e páginas PHP do sistema
-├── scripts/                 # Scripts e lógicas em JavaScript
-├── styles/                  # Folhas de estilo CSS
-├── LICENSE
-├── README.md                # Documentação oficial do projeto
-└── index.php                # Arquivo principal / Inicial da aplicação
