@@ -107,11 +107,6 @@ O ecossistema utiliza as seguintes tecnologias:
   </a>
 </p>
 
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+), Bootstrap.
-* **Backend:** PHP.
-* **Banco de Dados:** MySQL (gerenciado via MySQL Workbench / XAMPP).
-* **Gestão & Versionamento:** Git, GitHub e GitHub Projects (Kanban).
-* **Hardware e IoT (Conceitual):** ESP32 / Arduino e Sensores de presença/velocidade.
 
 ---
 
