@@ -110,18 +110,18 @@ O ecossistema utiliza as seguintes tecnologias:
 
 ---
 
-## Estrutura do Projeto
+##  Estrutura do Projeto
 
 A estrutura de diretórios do repositório está organizada da seguinte forma:
 
 ```text
 /
 ├── assets/                  # Imagens, logos e recursos visuais
+├── database/                # Scripts SQL e modelo de dados
 ├── doc/                     # Documentações e pesquisas do projeto
 ├── public/                  # Arquivos e páginas PHP do sistema
 ├── scripts/                 # Scripts e lógicas em JavaScript
 ├── styles/                  # Folhas de estilo CSS
-├── index.php                # Arquivo principal / Inicial da aplicação
 ├── LICENSE
 ├── README.md                # Documentação oficial do projeto
-└── WorkBench.SQL            # Script do banco de dados MySQL
+└── index.php                # Arquivo principal / Inicial da aplicação
