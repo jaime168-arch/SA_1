@@ -33,7 +33,6 @@ O sistema eleva o nível de controle e segurança operacional através da coleta
   <img width="100%" alt="Maquete / Protótipo Ferroviário" src="assets/wmremove-transformed.png" />
 </p>
 
----
 
 ## Funcionalidades e Requisitos Funcionais (RFs)
 
@@ -56,7 +55,6 @@ As funcionalidades do ecossistema foram categorizadas em três pilares, associad
 * **[RF10] Automação de Desvios:** Controle inteligente de desvios de trilhos e paradas logísticas programadas.
 * **[RF11] Módulo Analítico e Relatórios:** Geração e histórico de relatórios de desempenho e métricas operacionais para auditoria.
 
----
 
 ## Metodologia de Desenvolvimento e Kanban
 
@@ -76,7 +74,6 @@ O acompanhamento do desenvolvimento é realizado via **GitHub Projects**. Cada c
 - **Status de execução**
 
 **Link do GitHub Projects (Kanban):** [Acesse o Board do Projeto Aqui](https://github.com/jaime168-arch/SA_1/projects)
----
 
 ## Padrões de Código (Style Guide)
 
@@ -92,8 +89,6 @@ Para garantir a consistência e organizacão do repositório, a equipe estabelec
 * **Indentação:** Espaçamento padrão de 2 espaços em arquivos HTML, PHP, CSS e JS.
 * **Comentários:** Utilizados apenas para explicar regras de negócio complexas (*Clean Code*).
 * **Idioma:** Nomenclatura em português alinhada ao domínio do projeto Ferroramas.
-
----
 
 ## Tecnologias e Ferramentas
 
