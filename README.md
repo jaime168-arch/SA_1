@@ -9,7 +9,6 @@
   <img width="300" height="300" alt="Logo Já Ismaga" src="assets/imagem_1.webp.png" />
 </p>
 
----
 
 ## Índice
 - [Descrição do Projeto](#descrição-do-projeto)
@@ -21,7 +20,6 @@
 - [Como Executar o Projeto](#como-executar-o-projeto)
 - [Desenvolvedores](#desenvolvedores)
 
----
 
 ## Descrição do Projeto
 
@@ -35,7 +33,6 @@ O sistema eleva o nível de controle e segurança operacional através da coleta
   <img width="100%" alt="Maquete / Protótipo Ferroviário" src="assets/wmremove-transformed.png" />
 </p>
 
----
 
 ## Funcionalidades e Requisitos Funcionais (RFs)
 
@@ -58,7 +55,6 @@ As funcionalidades do ecossistema foram categorizadas em três pilares, associad
 * **[RF10] Automação de Desvios:** Controle inteligente de desvios de trilhos e paradas logísticas programadas.
 * **[RF11] Módulo Analítico e Relatórios:** Geração e histórico de relatórios de desempenho e métricas operacionais para auditoria.
 
----
 
 ## Metodologia de Desenvolvimento e Kanban
 
@@ -78,7 +74,6 @@ O acompanhamento do desenvolvimento é realizado via **GitHub Projects**. Cada c
 - **Status de execução**
 
 **Link do GitHub Projects (Kanban):** [Acesse o Board do Projeto Aqui](https://github.com/jaime168-arch/SA_1/projects)
----
 
 ## Padrões de Código (Style Guide)
 
@@ -95,8 +90,6 @@ Para garantir a consistência e organizacão do repositório, a equipe estabelec
 * **Comentários:** Utilizados apenas para explicar regras de negócio complexas (*Clean Code*).
 * **Idioma:** Nomenclatura em português alinhada ao domínio do projeto Ferroramas.
 
----
-
 ## Tecnologias e Ferramentas
 
 O ecossistema utiliza as seguintes tecnologias:
@@ -106,22 +99,3 @@ O ecossistema utiliza as seguintes tecnologias:
     <img src="https://skillicons.dev/icons?i=html,css,js,php,mysql,bootstrap,git,github" />
   </a>
 </p>
-
-
----
-
-## Estrutura do Projeto
-
-A estrutura de diretórios do repositório está organizada da seguinte forma:
-
-```text
-/
-├── assets/                  # Imagens, logos e recursos visuais
-├── doc/                     # Documentações e pesquisas do projeto
-├── public/                  # Arquivos e páginas PHP do sistema
-├── scripts/                 # Scripts e lógicas em JavaScript
-├── styles/                  # Folhas de estilo CSS
-├── index.php                # Arquivo principal / Inicial da aplicação
-├── LICENSE
-├── README.md                # Documentação oficial do projeto
-└── WorkBench.SQL            # Script do banco de dados MySQL
