@@ -12,4 +12,6 @@ R:
 1. O PDO (PHP Data Objects) é uma extensão do PHP que fornece uma interface leve e consistente para acesso a bancos de dados relacional.
 2. Oferece um conjunto único de classes e métodos para consultar e coletar dados, independentemente do banco de dados utilizado. 
 
-
+Vantagens e desvantagens de utilizar PDO;
+R: Vantagens: Possui uma API limpa, moderna e consistente baseada em objetos 
+Desvantagens: O PDO não reescreve sintaxes específicas de cada banco; se você mudar de SGBD, comandos com dialetos exclusivos precisarão ser reescritos manualmente. 
