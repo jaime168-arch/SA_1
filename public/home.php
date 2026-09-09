@@ -9,51 +9,62 @@
 <body>
 
 <div class="container-fluid">
-    <div class="row">
-        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse min-vh-100 p-0">
+   
+<div class="row">
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse min-vh-100 p-0">
             <div class="position-sticky pt-3">
                 <div class="text-center py-4">
                     <h3 class="fw-bold text-white">Já Ismaga</h3>
                     <small class="text-white-50">Painel IoT</small>
+               
                 </div>
                 
-                <ul class="nav flex-column">
-                    <li class="nav-item">
+            <ul class="nav flex-column">
+                   
+                <li class="nav-item">
                         <a class="nav-link active" href="home.html">
                             <i class="fa-solid fa-house me-2"></i> Início
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="usuario.html">
                             <i class="fa-solid fa-users me-2"></i> Usuários
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="sensores.html">
                             <i class="fa-solid fa-train me-2"></i> Sensores
                         </a>
                     </li>
+
                      <li class="nav-item">
                         <a class="nav-link" href="c-sensor.html">
                         <i class="fa-solid fa-train me-2"></i> Cadastrar Sensores
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link text-danger mt-5" href="../index.html">
                             <i class="fa-solid fa-right-from-bracket me-2"></i> Sair da Conta
                         </a>
                     </li>
-                </ul>
-            </div>
-        </nav>
+
+            </ul>
+        </div>
+    </nav>
 
        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
         <h1 class="h2 fw-bold" style="color: var(--azul-ismaga);">Bem-vindo, Operador!</h1>
+
         <div class="btn-toolbar mb-2 mb-md-0">
             <span class="badge bg-success p-2 d-flex align-items-center gap-1">
                 <i class="fa-solid fa-circle-check"></i> Sistema IoT Online
             </span>
+            
         </div>
     </div>
 
