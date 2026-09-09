@@ -7,3 +7,8 @@ R: O PDO é uma extensão da linguagem PHP para acesso a banco de dados. Totalme
 Como funciona uma conexão utilizando PDO;
 R: Uma conexão utilizando PDO funciona por meio da instanciação da classe nativa PDO, que cria uma camada de abstração para comunicar o PHP com diferentes bancos de dados usando uma interface única. 
 
+Quais são suas principais características;
+R: 
+1. O PDO (PHP Data Objects) é uma extensão do PHP que fornece uma interface leve e consistente para acesso a bancos de dados relacional.
+2. Oferece um conjunto único de classes e métodos para consultar e coletar dados, independentemente do banco de dados utilizado. 
+
