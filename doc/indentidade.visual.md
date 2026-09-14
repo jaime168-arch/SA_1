@@ -13,7 +13,6 @@ O conceito une trilhos lineares a caminhos de circuitos impressos (PCB), simboli
 * **Off-White (#FFFDF2):** Essa cor traz tranquilidade e sofisticação para o site
 
 ## 3. Interface do usuário (UI)
-
 * **Dark Mode:** Utilizando no dashboard para destacar dados de telemetria.
 * **Tipografia:** Uso de fornte modernas sem serifa para garantir legibilidade técnica.
 
