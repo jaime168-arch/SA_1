@@ -45,7 +45,7 @@
 
                                 <div class="text-center mt-3">
                                     <small class="text-muted">Não tem conta?</small>
-                                    <a href="cadastro.html" class="small fw-bold text-decoration-none" style="color: var(--laranja-ismaga);">Cadastre-se</a>
+                                    <a href="cadastro.php" class="small fw-bold text-decoration-none" style="color: var(--laranja-ismaga);">Cadastre-se</a>
                                 </div>
                             </div>
                         </div>
