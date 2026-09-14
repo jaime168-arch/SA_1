@@ -61,7 +61,7 @@
 
                             <div class="text-center mt-4">
                                 <span class="text-muted">Já utiliza o serviço?</span> 
-                                <a href="login.html" class="text-decoration-none fw-bold" style="color: var(--laranja-ismaga);">Fazer Login</a>
+                                <a href="login.php" class="text-decoration-none fw-bold" style="color: var(--laranja-ismaga);">Fazer Login</a>
                             </div>
                         </form>
 
