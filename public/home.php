@@ -22,31 +22,31 @@
             <ul class="nav flex-column">
                    
                 <li class="nav-item">
-                        <a class="nav-link active" href="home.html">
+                        <a class="nav-link active" href="home.php">
                             <i class="fa-solid fa-house me-2"></i> Início
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="usuario.html">
+                        <a class="nav-link" href="usuario.php">
                             <i class="fa-solid fa-users me-2"></i> Usuários
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="sensores.html">
+                        <a class="nav-link" href="sensores.php">
                             <i class="fa-solid fa-train me-2"></i> Sensores
                         </a>
                     </li>
 
                      <li class="nav-item">
-                        <a class="nav-link" href="c-sensor.html">
+                        <a class="nav-link" href="sensor-form.php">
                         <i class="fa-solid fa-train me-2"></i> Cadastrar Sensores
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-danger mt-5" href="../index.html">
+                        <a class="nav-link text-danger mt-5" href="index.php">
                             <i class="fa-solid fa-right-from-bracket me-2"></i> Sair da Conta
                         </a>
                     </li>
