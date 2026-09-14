@@ -30,7 +30,7 @@
                         </h1>
                         
                         <div class="mt-4">
-                            <a href="public/login.html" class="botao">Clique aqui para acessar</a>
+                            <a href="public/login.php" class="botao">Clique aqui para acessar</a>
                         </div>
                     </div>
 
