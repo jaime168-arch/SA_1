@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-
-    <main class="container d-flex align-items-center justify-content-center vh-100">
-        <div class="row w-100 justify-content-center">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-
-                <div class="main-container">
+   
+        <div class="main-container">
         <nav class="navbar navbar-dark navbar-ismaga">
             <div class="container justify-content-center">
                 <h2 class="m-0"><strong>+ Já</strong>.Ismaga</h2>
             </div>
-
-                <div class="card shadow-lg p-4">
-                    <div class="card-body">
+        </nav>
+    
+               <div class="cadastro-wrapper"> <br><br>
+            <div class="container">
+                <div class="row justify-content-center w-100 m-0">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                         
                         <div class="text-center mb-4">
                             <h2 class="fw-bold text-ismaga">Criar Conta</h2>
@@ -56,7 +55,7 @@
                             </div>
 
                             <div class="d-grid gap-2 mt-3">
-                                <button type="submit" class="btn btn-ismaga btn-lg shadow-sm">Cadastrar Agora</button>
+                                <button type="submit" class="btn btn-ismaga btn-lg shadow-sm">Cadastrar Agora</button> <a href= "home.php" ></a>
                             </div>
 
                             <div class="text-center mt-4">
