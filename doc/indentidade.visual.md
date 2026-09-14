@@ -8,7 +8,7 @@ A indentidade visual da **Já ismaga** busca equilibrar a nostalgia do ferrorama
 O conceito une trilhos lineares a caminhos de circuitos impressos (PCB), simbolizando a fusão entre o mecânico e o digital. A marca foca na "esmagagem" da complexidade.
 
 ## 2. Paleta de Cores
-* **Azul Marinho Escuro (#1A237E):** Representa a confiança, a segurança e tecnológia Cloud que apresentamos.
+* **,mmAzul Marinho Escuro (#1A237E):** Representa a confiança, a segurança e tecnológia Cloud que apresentamos.
 * **Laranja Vibrante  (#FF6D00):** Remete à energia de automações e de botões de ação.
 * **Off-White (#FFFDF2):** Essa cor traz tranquilidade e sofisticação para o site
 
