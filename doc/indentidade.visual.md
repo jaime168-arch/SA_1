@@ -17,7 +17,6 @@ O conceito une trilhos lineares a caminhos de circuitos impressos (PCB), simboli
 * **Tipografia:** Uso de fornte modernas sem serifa para garantir legibilidade técnica.
 
 ## 4. Elementos Gráficos e GrafismosTrilhos de Circuitos:
-
  Linhas finas em Laranja Vibrante conectando pontos de dados na tela, imitando tanto linhas de metrô/ferrorama quanto trilhas de placas eletrônicas.
  
 ## 5. Microanimações: 
