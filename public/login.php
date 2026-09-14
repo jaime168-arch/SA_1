@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-
     <div class="main-container">
         <nav class="navbar navbar-dark navbar-ismaga">
             <div class="container justify-content-center">
